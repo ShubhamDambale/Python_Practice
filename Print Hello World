@@ -91,3 +91,48 @@ print(type(normal[1]))
 
 countries2 = list(('shubham',42,True))
 print(type(countries2))
+
+#=================List Methods====================
+
+list1 = ['apple', 'banana', 'mango', 'orange']
+list2 = [1,5,9,7]
+
+# add two list 
+list1.extend(list2)
+
+print(list1)
+
+# add element to the list
+list2.append(3)
+print(list2)
+
+# add element in a perticuler index
+
+list1.insert(1, 'cherry')
+print(list1)
+
+list1.remove(5)
+print(list1)
+
+# delete all elements in list
+list2.clear()
+
+na = ['a', 'b', 'c', 'd', 's', 'a', 'b']
+
+print(na.count('a'))
+
+nam = [1,5,8,4,3,6,9,7]
+
+nam.sort()
+
+print(nam)
+na.reverse()
+print(na)
+
+list3 = nam.copy()
+print(list3)
+list3.pop()
+print(list3)
+
+del na
+print(na)
