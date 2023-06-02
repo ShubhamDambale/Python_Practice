@@ -88,3 +88,6 @@ normal = ['shubham', True, 25, 'ram']
 
 print(normal)
 print(type(normal[1]))
+
+countries2 = list(('shubham',42,True))
+print(type(countries2))
