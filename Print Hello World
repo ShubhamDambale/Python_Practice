@@ -1,2 +1,64 @@
 print('Hello world'+'Hello India ',100)
 print('shubham bro')
+
+# ====================Variables==========================
+
+name = "shubham"
+age  = 18
+
+print(name+' is a coder')
+print(name+' is',age,'years old')
+print(name+' is from India')
+
+# ===============Strings=================
+
+print('Hii. \n How  are you ?')
+
+print('i am \'shubham')
+# if we use '\' it help you to print the special characters
+
+name = 'shubham'
+print(name[5])
+print(name.upper(),name.lower())
+print(name.islower())
+
+print(name.upper().isupper())
+
+print(len(name))
+print(name.index("b"))
+print(name.replace('b','d'))
+
+# =============Numbers================
+
+print(52)
+number = 210
+print(number+90)
+print(number-25.25)
+print(20/6)
+print(20%6)
+
+# convert number to string
+number2 = str(number)
+print('number is a '+number2)
+
+print(abs(-5))
+print(max(2,6))
+
+from math import *
+
+print(sqrt(100))
+
+============Getting a Users Input=====================
+
+name = input('Enter your name: ')
+age = int(input('Enter your age: '))
+
+print('name is',name,'age is',age)
+
+# ==============word replace exercise======================
+
+sentence  = input('Enter your sentence :')
+print('your sentence is :',sentence)
+word1 = input('Enter the word to replace :')
+word2 = input('Enter the word to replace with: ')
+print(sentence.replace(word1,word2))
