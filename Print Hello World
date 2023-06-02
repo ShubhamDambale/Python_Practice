@@ -136,3 +136,37 @@ print(list3)
 
 del na
 print(na)
+
+# ==============Tuples in Python==================
+
+# touples in immutable in python
+# alow to add duplicates
+# it allows verious data types
+
+three_numbers = (1,2,3,1)
+#three_numbers[1] = 23
+print(three_numbers)
+
+print(type(three_numbers))
+
+mix = ('germ', 1, True, 6)
+
+boo = (True,False, False, True)
+
+# ================Functions in Python=======================
+
+def greetings_function(name,age):
+    print('Welcome '+name)
+    print('Welcome '+ str(age)) 
+
+name = input('Enter your name')
+greetings_function(name,23)
+
+
+def hello(*name):
+    print(name[1])
+
+hello('ram','shyam','jyam')    
+
+
+
