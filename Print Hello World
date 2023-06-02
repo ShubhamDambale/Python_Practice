@@ -62,3 +62,29 @@ print('your sentence is :',sentence)
 word1 = input('Enter the word to replace :')
 word2 = input('Enter the word to replace with: ')
 print(sentence.replace(word1,word2))
+
+# =============List In Python===============
+
+countries = ['india', 'uk', 'pakistan', 'china', 'America']
+print(countries)
+print(countries[2])
+print(countries[0][2])
+
+# get list from uk
+print(countries[1:])
+
+# get a list uk to china
+print(countries[1:4])
+
+print(type(countries))
+
+countries[1] = 'USA'
+print(countries)
+
+print(countries[-1])
+print(len(countries))
+
+normal = ['shubham', True, 25, 'ram']
+
+print(normal)
+print(type(normal[1]))
