@@ -177,3 +177,234 @@ def add_numbers(num1, num2):
 num1 = int(input('Enter num1: '))
 num2 = int(input('Enter num2: '))
 print(add_numbers(num1,num2))
+
+
+# ==============If Statement In Python==================
+
+# write a number 
+# the number is divisible by 2
+#    the is an even number
+# not divisible by 2
+# odd number
+
+# a = 5
+# b = 5
+
+# if a > b:
+#     print(str(a)+' is grater than '+str(b))
+# elif a == b:
+#     print('A is not equals to B')   
+# else:
+#     print('A is not grater than b')
+    
+
+
+# Builder an Even Number Checker Program
+
+# num = int(input('Enter a number :'))
+
+# if num%2==0:
+#     print('Number is a Even')
+# else:
+#     print('Number is Odd')    
+
+
+
+# =========== Dictionaries In Python =============
+
+# is stored the value in key value pair
+# Duplicates not Allowed
+# Key is Unique and Values are allowed to Duplicates
+   
+# my_dict = {
+#     'name':'Tim',
+#     'name':'Chotu',
+#     'age':23,
+#     'isTall':True,
+#     'nationality':'Indian',
+#     'Qualification':'College',
+#     'friends': ['peter', 'paul', 'Nihal']
+# }
+
+# print(my_dict)
+# print(my_dict['name'])
+# print(len(my_dict))
+# print(my_dict['age'])
+# print(type(my_dict))
+
+# x = my_dict['name']
+
+# print(x)
+
+
+# ========== While Loops  In Python ==============
+
+# i = 1
+# while i < 6 or i == 6:
+#     print(i)
+#     i += 1
+
+
+# ============ For Loop ===============
+
+# for letter in 'Hello':
+#     print(letter)
+
+
+# mylist = ['ji','ju','jp']
+
+# for i in mylist:
+#     print(i)
+#     if i == 'ju':
+#        break
+
+
+
+# mydict = {
+
+# 'name':'john',
+# 'age':23
+# }
+
+# for x in mydict:
+#     print(x)
+
+
+# for a in range(10):
+#     print(a)   
+# else:
+#     print('Finished Loop')     
+
+# for b in range(3,7):
+#     print(b)   
+
+
+# =========== 2D List ============
+
+# my_list = [
+#     [1,2,3],
+#     [4,5,6],
+#     [7,8,9]
+# ]
+
+# # print(my_list[1][1])
+
+# for list in my_list:
+#     for row in list:
+#         print(row)
+
+
+
+# ============= Builder A Basic Calculator ============
+
+# num1 = int(input('Enter first number'))
+# num2 = int(input('Enter second number'))
+# op = input('Enter Operator')
+
+# if op == '+':
+#     print('The addition is',num1+num2)
+# elif op == '-':
+#     print('The substraction is',num1-num2)  
+# elif op == '*':
+#     print('The Multiplication is',num1*num2)  
+# elif op == '/':
+#     print('The Division is',num1/num2)  
+# else:
+#     print('Invalid Operator')     
+
+
+
+# ====== Try Except In Python ===========
+
+# try:
+#   x = int(input('Input an Integer: '))
+#   print(x)
+# except :
+#   print('SomeThing went wrong')
+# finally :
+#   print("Nothing went wrong")  
+
+
+# ======== Reading Files ==========
+
+
+# coun_file = open('countries.txt', 'r')
+# print(coun_file.readable())
+# # print(coun_file.readlines())
+
+# for lines in coun_file.readlines():
+#     print(lines)
+# coun_file.close()
+
+
+# ========== Writing Files ==========
+                   # new file is created with this text
+# coun_file = open('countries.txt', 'w')
+
+# coun_file = open('countries.txt', 'a')
+# coun_file.write(' \nThis is a new text with append ')
+
+
+# ============ Classes And Objects In Python =============
+
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+
+#    # x = 5
+
+# name = input('Enter name: ')   
+# age = int(input('Enter age: '))
+
+# p1 = Person(name,age)
+# print(p1.name)  
+# print(p1.age)  
+
+
+# =========== Inheritance In Python ==============
+
+# class Student():
+#     name = 'Tim'
+#     age = 23
+#     gender = 'male'
+
+# ================ The PYTHON Shell===============
+
+# In windows Serach console search =====> IDLE
+
+
+# ============ Building A Simple Login And SignUp System With Python =============
+
+# print('Create Account Now :')
+
+# username = input('Enter username: ' )
+# password = input('Enter password: ')
+
+# print ('Your account has been created successfully')
+
+# print('Login Now')
+
+# username2 = input('Enter username: ' )
+# password2 = input('Enter password: ')
+
+# if username == username2 and password == password2:
+#     print('Logged in Successfully')
+# else:
+#     print('Invalid Credential')    
+
+
+# print('Thank You !')
+
+
+
+
+# ======== Modules In Python ============
+
+# def say_hi():
+#     print('Hii')
+
+
+# ======== Introduction to PIP =============
+
