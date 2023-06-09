@@ -1,0 +1,90 @@
+==> Create Folder open cmd in that folder
+
+Microsoft Windows [Version 10.0.19045.2965]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\djangotutorial>pip install django
+Requirement already satisfied: django in c:\users\shubham\appdata\local\programs\python\python311\lib\site-packages (4.2)
+Requirement already satisfied: asgiref<4,>=3.6.0 in c:\users\shubham\appdata\local\programs\python\python311\lib\site-packages (from django) (3.6.0)
+Requirement already satisfied: sqlparse>=0.3.1 in c:\users\shubham\appdata\local\programs\python\python311\lib\site-packages (from django) (0.4.4)
+Requirement already satisfied: tzdata in c:\users\shubham\appdata\local\programs\python\python311\lib\site-packages (from django) (2023.3)
+
+[notice] A new release of pip available: 22.3.1 -> 23.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+E:\djangotutorial>pip install virtualenvwrapper-win
+Collecting virtualenvwrapper-win
+  Downloading virtualenvwrapper_win-1.2.7-py3-none-any.whl (18 kB)
+Collecting virtualenv
+  Downloading virtualenv-20.23.0-py3-none-any.whl (3.3 MB)
+     ---------------------------------------- 3.3/3.3 MB 1.6 MB/s eta 0:00:00
+Collecting distlib<1,>=0.3.6
+  Downloading distlib-0.3.6-py2.py3-none-any.whl (468 kB)
+     ---------------------------------------- 468.5/468.5 kB 2.9 MB/s eta 0:00:00
+Collecting filelock<4,>=3.11
+  Downloading filelock-3.12.0-py3-none-any.whl (10 kB)
+Collecting platformdirs<4,>=3.2
+  Downloading platformdirs-3.5.1-py3-none-any.whl (15 kB)
+Installing collected packages: distlib, platformdirs, filelock, virtualenv, virtualenvwrapper-win
+Successfully installed distlib-0.3.6 filelock-3.12.0 platformdirs-3.5.1 virtualenv-20.23.0 virtualenvwrapper-win-1.2.7
+
+[notice] A new release of pip available: 22.3.1 -> 23.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+E:\djangotutorial>mkvirtualenv myapp
+ C:\Users\Shubham\Envs is not a directory, creating
+created virtual environment CPython3.11.3.final.0-64 in 7019ms
+  creator CPython3Windows(dest=C:\Users\Shubham\Envs\myapp, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\Shubham\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==23.1.2, setuptools==67.7.2, wheel==0.40.0
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+(myapp) E:\djangotutorial>pip install django
+Collecting django
+  Downloading Django-4.2.2-py3-none-any.whl (8.0 MB)
+     ---------------------------------------- 8.0/8.0 MB 3.1 MB/s eta 0:00:00
+Collecting asgiref<4,>=3.6.0 (from django)
+  Downloading asgiref-3.7.2-py3-none-any.whl (24 kB)
+Collecting sqlparse>=0.3.1 (from django)
+  Using cached sqlparse-0.4.4-py3-none-any.whl (41 kB)
+Collecting tzdata (from django)
+  Using cached tzdata-2023.3-py2.py3-none-any.whl (341 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, django
+Successfully installed asgiref-3.7.2 django-4.2.2 sqlparse-0.4.4 tzdata-2023.3
+
+(myapp) E:\djangotutorial>django-admin startproject myproject
+
+(myapp) E:\djangotutorial>dir
+ Volume in drive E has no label.
+ Volume Serial Number is 9863-E21E
+
+ Directory of E:\djangotutorial
+
+06/09/2023  08:19 PM    <DIR>          .
+06/09/2023  08:19 PM    <DIR>          ..
+06/09/2023  08:19 PM    <DIR>          myproject
+               0 File(s)              0 bytes
+               3 Dir(s)  69,943,246,848 bytes free
+
+(myapp) E:\djangotutorial>cd myproject
+
+(myapp) E:\djangotutorial\myproject>dir
+ Volume in drive E has no label.
+ Volume Serial Number is 9863-E21E
+
+ Directory of E:\djangotutorial\myproject
+
+06/09/2023  08:19 PM    <DIR>          .
+06/09/2023  08:19 PM    <DIR>          ..
+06/09/2023  08:19 PM               687 manage.py
+06/09/2023  08:19 PM    <DIR>          myproject
+               1 File(s)            687 bytes
+               3 Dir(s)  69,943,246,848 bytes free
+
+(myapp) E:\djangotutorial\myproject>deactivate
+
+E:\djangotutorial\myproject>if defined _OLD_VIRTUAL_PYTHONPATH (set "PYTHONPATH=" )
+
+E:\djangotutorial\myproject>workon myapp
+(myapp) E:\djangotutorial\myproject>
+(myapp) E:\djangotutorial\myproject>
