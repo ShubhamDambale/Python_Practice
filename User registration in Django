@@ -1,0 +1,77 @@
+First we need add one url for registration in (urls.py)
+
+from . import views
+from django.urls import path
+
+urlpatterns = [
+    path('', views.index, name='index'),
+    path('counter',views.counter,name='counter'),
+    path('register'.views.register,name='register')
+]
+
+in our views add function
+
+def register(request):
+    return render(request,'register.html')
+    
+
+Then create register.html file
+
+<<h1>Sign Up Below</h1>
+<style>
+    h5{
+        color: red;
+    }
+</style>
+
+{% for message in messages %}
+<h5>{{message}}</h5>
+{% endfor %}
+
+<form action="register" method="POST">
+{% csrf_token %}
+<p>Username:</p>
+<input type="text" name="username" />
+<p>Email:</p>
+<input type="email" name="email">
+<p> Password:</p>
+<input type="password" name="password">
+<p>Repeat Password:</p>
+<input type="password" name="password2"> <br>
+
+<input type="submit" />
+</form>
+
+
+===========================
+
+in our views.py collect form data
+
+def register(request):
+
+    if request.method == 'POST':
+        username = request.POST['username']
+        email = request.POST['email']
+        password = request.POST['password']
+        password2 = request.POST['password2']
+
+        if  password == password2:
+           if User.objects.filter(email=email).exists():
+              messages.info(request, 'Email Already Used')
+              return redirect('register')
+           elif User.objects.filter(username=username).exists():
+               messages.info(request, 'Username Already Used')
+               return redirect('register')
+           else:
+               user = User.objects.create_user(username=username, email=email, password=password)
+               user.save();
+               return redirect('login')
+        else:
+            messages.info(register, 'Password Not The Same')
+            return redirect('register')   
+
+    else:
+        return render(request,'register.html')
+    
+
+
