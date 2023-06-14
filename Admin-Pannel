@@ -1,0 +1,71 @@
+Models.py
+
+from django.db import models
+
+# Create your models here.
+
+class Feature(models.Model):
+    name =models.CharField(max_length=100)
+    details = models.CharField(max_length=500)
+    
+if we want send this table in our database 
+We need to register our main Project settings file (myproject)
+
+settings.py
+============
+# Application definition
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'myapp'
+]
+
+we need to migrate this data into our database
+======================================================
+type a Command
+----------------
+python manage.py migrate
+----------------
+
+we use this again migartion command when we make changes in our models file
+
+================================================================
+
+
+
+
+
+
+
+
+
+
+admin pannel
+
+add /admin after our url  thin we dericted to the login from
+
+create username and password
+==============================
+PS E:\djangotutorial\myproject> python manage.py createsuperuser
+Username (leave blank to use 'shubham'): chotu
+Email address: 
+Password: 
+Password (again): 
+Superuser created successfully.
+
+if want migrate out modules into database, we need to register modules.py to admin.py
+
+admin.py
+-------
+from django.contrib import admin
+from .models import Feature  # first import our Feature class 
+
+# Register your models here.
+
+admin.site.register(Feature)
+ 
