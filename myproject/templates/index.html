@@ -1,0 +1,25 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<!-- <h1>
+    Hey {{name}} Good {{status}}
+</h1>
+
+<img src="https://picsum.photos/seed/picsum/200/300" alt=""> -->
+
+<h1> Input Your Text Below :</h1>
+
+<form action="counter", method="POST">
+    {% csrf_token %}
+    <textarea name="text" id="mainbox" cols="100" rows="25"></textarea><br>
+    <input type="submit" class="button-63">
+</form>
+
+{{feature1.name}}<br>    
+{{feature1.id}}<br>
+{{feature1.details}}<br><br>
+
+{{feature2.id}}<br>
+{{feature2.name}}<br>
+{{feature2.details}}
